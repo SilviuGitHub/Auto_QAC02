@@ -1,7 +1,5 @@
 package homeworks.java.intro;
 
-import java.util.Scanner;
-
 public class Calculator {
     public static void main(String[] args) {
 

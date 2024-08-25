@@ -18,11 +18,11 @@ public class Main {
         Circle c3 = new Circle("green", 1, 5);
 //        System.out.println("The color of the circle is " + c2.getColor());
         c2.printCircle();
-//        non static call
+        // non static call
         c3.printCircle();
         c3.setColor("blue");
 
-//        static call
+        // static call
         Utils.printCircleStatic(c3);
 
         Rectangle r1 = new Rectangle();
@@ -31,5 +31,8 @@ public class Main {
 
         Shape r2 = new Rectangle(6, 7);
         Shape sq2 = new Square(8);
+
+
+
     }
 }

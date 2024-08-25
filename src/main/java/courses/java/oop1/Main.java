@@ -1,5 +1,7 @@
 package courses.java.oop1;
 
+import courses.java.oop2.Utils;
+
 public class Main {
     public static void main(String[] args) {
 //      instantiere obiect de tip pixuri
@@ -24,13 +26,13 @@ public class Main {
 //       aplelare metoda statica dintr-o clasa
         Draw.drawFullShape(3, 2);
         System.out.println("-------------------------------------------------");
-        Draw.drawShapeOutline(7, 8);
+        Draw.drawShapeOutline(7,8);
         Draw.drawSquare(5);
         System.out.println("-------------------------------------------------");
 //        constructor custom
         Square square = new Square(7);
         square.draw();
-        System.out.println("Aria patratului este:" + square.getArea());
+        System.out.println("Aria patratului este:"+square.getArea());
         System.out.println("-------------------------------------------------");
         //        constructor default with set method
         Square square1 = new Square();
@@ -43,9 +45,11 @@ public class Main {
         System.out.println("-------------------------------------------------");
         Circle circle = new Circle(5.4);
         System.out.println("Circle area:" + circle.getArea());
+        System.out.println("-------------------------------------------------");
         Rectangle rectangle = new Rectangle(5, 7);
-        System.out.println("Area:" + rectangle.getArea());
-        System.out.println("Perimeter:" + rectangle.getPerimeter());
-        System.out.println("Diagonal:" + rectangle.getDiagonal());
+        System.out.println("Rectangle area:" + rectangle.getArea());
+        System.out.println("Rectangle perimeter:" + rectangle.getPerimeter());
+        System.out.println("Rectangle diagonal:" + rectangle.getDiagonal());
+
     }
 }

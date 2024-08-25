@@ -1,23 +1,23 @@
 package courses.java.oop1;
 
 public class Rectangle {
-    private double length;
     private double width;
+    private double length;
 
-    public Rectangle(double length, double width) {
-        this.length = length;
+    public Rectangle(double width, double length) {
         this.width = width;
+        this.length = length;
     }
 
     public double getArea() {
-        return this.length * this.width;
+        return this.width * this.length;
     }
 
     public double getPerimeter() {
-        return 2 * (this.length + this.width);
+        return 2 * (this.width + this.length);
     }
 
     public double getDiagonal() {
-        return Math.sqrt((this.length * this.length) * (this.width * this.width));
+        return Math.sqrt(this.width * this.width + this.length * this.length);
     }
 }

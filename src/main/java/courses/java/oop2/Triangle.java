@@ -18,5 +18,4 @@ public class Triangle extends Shape{
     @Getter @Setter
     private int l3;
 
-
 }
